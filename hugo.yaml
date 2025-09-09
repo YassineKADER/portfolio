@@ -1,7 +1,7 @@
 baseURL: https://portfolio-aiopjhxab-yassinekaders-projects.vercel.app/
 languageCode: en-us
 title: Yassine Kader
-theme: ["PaperMod"]
+theme: PaperMod
 
 menu:
   main:
