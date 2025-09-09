@@ -1,0 +1,38 @@
+# Hugo build output
+/public/
+/resources/
+/hugo_stats.json
+
+# OS / Editor files
+.DS_Store
+Thumbs.db
+ehthumbs.db
+Icon?
+Desktop.ini
+
+# VSCode
+.vscode/
+*.code-workspace
+
+# JetBrains IDEs
+.idea/
+
+# Node.js (if you use npm/yarn for themes or search)
+node_modules/
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
+# Log files
+*.log
+
+# Backup / temp files
+*~
+*.swp
+*.swo
+*.tmp
+*.bak
+
+# Hugo environment files
+.env
+.env.*

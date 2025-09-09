@@ -1,0 +1,86 @@
+baseURL: https://example.org/
+languageCode: en-us
+title: Yassine Kader
+theme: ["PaperMod"]
+
+menu:
+  main:
+    - identifier: home
+      name: Home
+      url: /
+      weight: 10
+    - identifier: projects
+      name: Projects
+      url: /projects
+      weight: 30
+    - identifier: experience
+      name: Experience
+      url: /experience
+      weight: 20
+    - identifier: blog
+      name: Blog
+      url: /blog
+      weight: 40
+    - identifier: search
+      name: Search
+      url: /search
+      weight: 50
+
+params:
+  showToc: true
+  TocOpen: false
+  ShowBreadCrumbs: true
+  ShowCodeCopyButtons: true
+  hideMeta: false
+  defaultTheme: auto
+  env: production
+
+  profileMode:
+    enabled: true
+    title: "Yassine Kader"
+    subtitle: "👋 Hi, I’m Yassine — passionate about Machine Learning and AI. I enjoy solving problems and exploring how intelligent systems can create real impact. Always eager to learn, grow, and collaborate on innovative projects."
+    imageUrl: "images/me.jpg"
+    imageTitle: "Me :)"
+    imageWidth: 250
+    imageHeight: 250
+    buttons:
+    - name: Resume
+      url: "https://drive.google.com/file/d/1KnJsZHcTrJkHWjRh9p302sRPzoLo0MqR/view?usp=sharing"
+      external: true
+
+  socialIcons:
+    - name: github
+      url: "https://github.com/yassinekader"
+    - name: linkedin
+      url: "https://www.linkedin.com/in/yassine-kader/"
+    - name: email
+      url: "mailto:yassinekader.contact@gmail.com"
+    - name: upwork
+      url: "https://www.upwork.com/freelancers/~01b6c49691f96f3d7e"
+
+  hideDescriptionInList: false
+
+  cover:
+    hiddenInList: false
+    hiddenInSingle: false
+
+  fuseOpts:
+    isCaseSensitive: false
+    shouldSort: true
+    location: 0
+    distance: 1000
+    threshold: 0.4
+    minMatchCharLength: 0
+    keys: ["title", "permalink", "summary", "content"]
+
+# 👇 THIS PART MUST BE OUTSIDE "params"
+outputs:
+  home:
+    - HTML
+    - RSS
+    - JSON
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
